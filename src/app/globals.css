@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Map design tokens → Tailwind color utilities (bg-primary, text-foreground, …). */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --primary: #0008ff;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0a0a0a;
+  --muted: #f5f6f8;
+  --muted-foreground: #64748b;
+  --accent: #eef0ff;
+  --accent-foreground: #0008ff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e6e8ee;
+  --input: #e6e8ee;
+  --ring: #0008ff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, system-ui, -apple-system, Segoe UI, Roboto, sans-serif);
+}
+
+/* Form fields always use a normal sans font — the decorative display font
+ * (Cinzel) renders lowercase like small caps, which makes typed text look
+ * ALL-CAPS and hard to read. */
+input,
+textarea,
+select {
+  font-family: var(--font-sans, system-ui, -apple-system, Segoe UI, Roboto, sans-serif);
+}
