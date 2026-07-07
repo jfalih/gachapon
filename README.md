@@ -4,6 +4,8 @@ An MMORPG-style **claw machine gacha** web app. A moss-covered, vine-wrapped gac
 machine stands in a night-forest clearing (rendered in Three.js); players spend
 coins to pull banners, watch the claw grab a capsule, and collect fantasy loot.
 
+https://github.com/user-attachments/assets/e30a2b3e-e575-4a12-bcef-3c6ac35c6dd9
+
 ## Features
 
 **Player**
